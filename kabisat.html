@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahun Kabisat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .tahun-kabisat {
+            color: green;
+        }
+
+        .bukan-tahun-kabisat {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>Tahun Kabisat</h1>");
+
+        for (let year = 1600; year <= 2024; year += 4) {
+            if (year % 400 === 0) {
+                document.write(`<p class="tahun-kabisat">${year} adalah tahun kabisat.</p>`);
+            } else if (year % 100 === 0) {
+                document.write(`<p class="bukan-tahun-kabisat">${year} bukan tahun kabisat.</p>`);
+            } else if (year % 4 === 0) {
+                document.write(`<p class="tahun-kabisat">${year} adalah tahun kabisat.</p>`);
+            } else {
+                document.write(`<p class="bukan-tahun-kabisat">${year} bukan tahun kabisat.</p>`);
+            }
+        }
+    </script>
+</body>
+
+</html>

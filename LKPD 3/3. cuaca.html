@@ -9,14 +9,14 @@
 
 <body>
     <script>
-        let suhuFahrenheit = parseFloat(prompt("Masukkan suhu dalam Fahrenheit:"));
+        let fahrenheit = parseFloat(prompt("Masukkan suhu dalam Fahrenheit:"));
 
-        let suhuCelsius = (suhuFahrenheit - 32) * (5 / 9);
+        let celcius = (fahrenheit - 32) * (5 / 9);
 
         let kategori;
-        if (suhuCelsius > 300) {
+        if (celcius > 300) {
             kategori = "panas";
-        } else if (suhuCelsius < 250) {
+        } else if (celcius < 250) {
             kategori = "dingin";
         } else {
             kategori = "normal";
